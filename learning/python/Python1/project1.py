@@ -9,12 +9,12 @@
 # pattern(5)
 
 
-def pattern(n):
-    for i in range(1, n+1):
-        print("*" * i, "*" * (n - j))
+# def pattern(n):
+#     for i in range(1, n+1):
+#         print("*" * i, "*" * (n - j))
 
-    for j in range(i, 0, -1):
-        print("*" * j)
+#     for j in range(i, 0, -1):
+#         print("*" * j)
 
-pattern(6)
+# pattern(6)
 
