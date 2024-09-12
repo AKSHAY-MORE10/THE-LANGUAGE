@@ -173,7 +173,7 @@ public class java1 {
         Scanner scnr = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int num = scnr.nextInt();
-// 
+
         // for (int i = 0; i <= num; i++) {
         //     for (int j = 0; j < num-i; j++) {
         //         System.out.print(" ");
