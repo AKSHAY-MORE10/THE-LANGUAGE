@@ -143,3 +143,5 @@ let str = "   akshay  "
 let strimed = str.trim();
 
 console.log([strimed.length()]);
+
+
