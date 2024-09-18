@@ -1,8 +1,6 @@
 "use strict";
 
 
-
-
 // function info(){
 //     console.log(this)
 // }
@@ -13,13 +11,6 @@
 //     console.log(this)
 // }
 // info()
-
-
-
-
-
-
-
 
 
 
@@ -96,8 +87,6 @@
 // }
 
 // library.borrowbook();
-
-
 
 
 
