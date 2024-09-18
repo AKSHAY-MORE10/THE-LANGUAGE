@@ -1,244 +1,93 @@
-akshhh
-akshhh.10
-Online
+Certainly! Here are the questions with hints, including example inputs and outputs:
 
-NITESH-DK — 07/27/2024 8:59 PM
-Hello Everyone
-NITESH-DK — 07/28/2024 11:22 AM
-We will take live at 12 45
-S — 07/28/2024 11:23 AM
-Ok
-NITESH-DK — 07/28/2024 12:44 PM
-lecutre is posponded at 4: 00 pm
-S — 07/28/2024 2:12 PM
-Ok
-NITESH-DK — 07/28/2024 5:11 PM
-https://excalidraw.com/#json=YtGkGZXKI3tbVumo8fcbp,LcSWlWy11WMQktCprcxVgg
-Excalidraw
-Excalidraw — Collaborative whiteboarding made easy
-Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.
-Excalidraw — Collaborative whiteboarding made easy
-Ayush-AP — 07/30/2024 7:54 PM
-https://asan-tech-reimagine-round1-73b9rqtz2-ayush-pawars-projects.vercel.app/
-https://asan-tech-reimagine-round2.vercel.app/
-NITESH-DK — 07/30/2024 7:55 PM
-rounded -1 link is private
-Ayush-AP — 07/30/2024 7:58 PM
-https://helpusgreen.vercel.app/
-NITESH-DK — 08/01/2024 12:51 PM
-🚀 Just had our Round 3 interview for the Reimagine Hackathon! 💡 It was amazing connecting with Sarthak Bhaiya. Our conversation was great, and he guided us brilliantly with some fantastic insights. Feeling energized and ready for the next challenge! 💪✨
+---
 
-⁠hackathon #ReimagineHackathon #Grateful #LearningExperience #Teamwork
-NITESH-DK — Today at 8:20 PM
-niteshkushwaha1109@gmail.com
-## Differences Between Syntax in C++ and Java
+### 1D Array Questions
 
-### Taking Input
+1. **Sum of Array Elements:**  
+   **Input:** `arr = {10, 20, 30, 40, 50}`  
+   **Output:** `150`  
+   **Hint:** Use a loop to add each element of the array to a `sum` variable.
 
-#### Java
-Expand
-message.txt
-5 KB
-﻿
-## Differences Between Syntax in C++ and Java
+---
 
-### Taking Input
+2. **Find Maximum Element in Array:**  
+   **Input:** `arr = {15, 42, 7, 89, 33}`  
+   **Output:** `89`  
+   **Hint:** Initialize `max` with the first element and update it if a larger element is found while looping through the array.
 
-#### Java
+---
 
-In Java, we use the `Scanner` class from the `java.util` package to take input.
+3. **Reverse Array:**  
+   **Input:** `arr = {1, 2, 3, 4, 5}`  
+   **Output:** `{5, 4, 3, 2, 1}`  
+   **Hint:** Swap elements from the start and end moving towards the center until all elements are reversed.
 
-```java
-import java.util.*;
+---
 
-public class App1 {
-    public static void main(String[] args) {
-        Scanner scnr = new Scanner(System.in);
-        
-        int num = scnr.nextInt();
-        System.out.println(num);
-    }
-}
-```
+4. **Count Occurrences of a Number in Array:**  
+   **Input:** `arr = {4, 2, 4, 3, 4, 1}`, target `4`  
+   **Output:** `3`  
+   **Hint:** Loop through the array and increment a counter each time the target number is found.
 
-#### C++
+---
 
-In C++, we use `cin` followed by `>>`, which is included in the `<iostream>` header.
+5. **Find Second Largest Element in Array:**  
+   **Input:** `arr = {12, 35, 1, 10, 34, 1}`  
+   **Output:** `34`  
+   **Hint:** Track both the largest and the second largest elements while looping through the array.
 
-```cpp
-#include <iostream>
-using namespace std;
+---
 
-int main() {
-    int intVal;
-    cin >> intVal;
-    cout << intVal << endl;
-    return 0;
-}
-```
+6. **Sum of Elements at Even Indexes:**  
+   **Input:** `arr = {5, 10, 15, 20, 25, 30}`  
+   **Output:** `5 + 15 + 25 = 45`  
+   **Hint:** Use a loop with an increment of 2 to access elements at even indexes.
 
-### Taking String Input
+---
 
-#### Java
+7. **Check if Array is Sorted:**  
+   **Input:** `arr = {1, 2, 3, 4, 5}`  
+   **Output:** `true` (indicating the array is sorted)  
+   **Hint:** Compare each element with the next one to check if the array is sorted in ascending order.
 
-For string input in Java, `nextLine()` is used to include spaces.
+---
 
-```java
-import java.util.*;
+### 2D Array Questions
 
-public class App1 {
-    public static void main(String[] args) {
-        Scanner scnr = new Scanner(System.in);
-        
-        // String str = scnr.next(); // Use next() for single word input
-        String str = scnr.nextLine(); // Use nextLine() for full line input
-        System.out.println(str);
-    }
-}
-```
+1. **Transpose of a 2D Array:**  
+   **Input:** `arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}`  
+   **Output:** `{{1, 4, 7}, {2, 5, 8}, {3, 6, 9}}`  
+   **Hint:** Swap rows with columns using nested loops to create the transpose of the matrix.
 
-#### C++
+---
 
-In C++, `getline()` is used to read an entire line of text.
+2. **Find the Sum of Each Row in a 2D Array:**  
+   **Input:** `arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}`  
+   **Output:** `6, 15, 24` (sum of each row)  
+   **Hint:** Iterate over each row and sum its elements, then store or print the sum for each row.
 
-```cpp
-#include <iostream>
-using namespace std;
+---
 
-int main() {
-    string str;
-    getline(cin, str);
-    cout << str << endl;
-    return 0;
-}
-```
+3. **Find the Sum of Each Column in a 2D Array:**  
+   **Input:** `arr = {{10, 20, 30}, {40, 50, 60}, {70, 80, 90}}`  
+   **Output:** `120, 150, 180` (sum of each column)  
+   **Hint:** Use nested loops to sum elements column-wise and store or print the sum for each column.
 
-### Lossy Conversion
+---
 
-#### Java
+### 3D Array Questions
 
-In Java, lossy conversion can occur when converting from a data type with higher precision or a larger range to one with lower precision. Java requires explicit casting to handle such conversions.
+1. **Sum of All Elements in a 3D Array:**  
+   **Input:** `arr = {{{1, 2}, {3, 4}}, {{5, 6}, {7, 8}}}`  
+   **Output:** `36`  
+   **Hint:** Use three nested loops to traverse all dimensions (layers, rows, and columns) and sum up all elements.
 
-**Example of lossy conversion:**
+---
 
-```java
-import java.util.*;
+2. **Find the Maximum Element in a 3D Array:**  
+   **Input:** `arr = {{{1, 2, 3}, {4, 5, 6}}, {{7, 8, 9}, {10, 11, 12}}}`  
+   **Output:** `12`  
+   **Hint:** Initialize `max` with the first element and update it as you compare with every element in the 3D array using three nested loops.
 
-public class App1 {
-    public static void main(String[] args) {
-        Scanner scnr = new Scanner(System.in);
-
-        float flt = 10.00f; 
-        int num = (int) flt; // Explicit casting needed
-        System.out.println(num); 
-        // Output: 10
-    }
-}
-```
-
-#### C++
-
-In C++, you can implicitly convert between types without an explicit cast, which might lead to loss of precision.
-
-**Example of implicit conversion:**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    float flt = 10.00f;
-    int num = flt; // Implicit conversion
-    cout << num << endl;
-    // Output: 10
-    return 0;
-}
-```
-
-###  Source Type vs. Destination Type
-
-#### Java
-
-In Java, when assigning a value from one type (Source Type) to another type (Destination Type), the conversion behavior depends on the types involved.
-
-**Example of smaller data type being inserted into a bigger data type:**
-
-```java
-public class Main {
-    public static void main(String[] args) {
-        int smallValue = 42;  // Source Type is `int`
-        double largerValue = smallValue;  // Destination Type is `double`
-
-        System.out.println("Small Value: " + smallValue);  // Output: 42
-        System.out.println("Larger Value: " + largerValue); // Output: 42.0
-    }
-}
-```
-
-**Explanation:**
-- **Source Type (`int`)**: The variable `smallValue` holds an integer.
-- **Destination Type (`double`)**: The variable `largerValue` can hold a `double`, so the `int` value `42` is implicitly converted to `42.0` without losing any data.
-
-#### C++
-
-C++ also allows implicit conversion from a smaller data type to a larger data type.
-
-**Example of smaller data type being inserted into a bigger data type:**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    int smallValue = 42;  // Source Type is `int`
-    double largerValue = smallValue;  // Destination Type is `double`
-
-    cout << "Small Value: " << smallValue << endl;  // Output: 42
-    cout << "Larger Value: " << largerValue << endl; // Output: 42.0
-    return 0;
-}
-```
-
-
-### Java
-#### Bigger Data Type Cannot Be Inserted into Smaller Data Type
-
-In Java, attempting to assign a larger data type (like `double`) to a smaller data type (like `int`) requires explicit casting. Without casting, it will result in a compile-time error.
-
-**Example of error due to implicit conversion:**
-
-```java
-public class Main {
-    public static void main(String[] args) {
-        double source = 123.456;  // Source Type is `double`
-        int destination = (int) source;  // Explicit casting needed
-
-        System.out.println(destination); // Output: 123
-    }
-}
-```
-
-**Error:**
-- Possible lossy conversion from `double` to `int`
-
-#### C++
-
-In C++, implicit conversion can be done from a larger data type to a smaller data type, but it might lead to loss of precision.
-
-**Example of implicit conversion:**
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    double source = 123.456;  // Source Type is `double`
-    int destination = source; // Implicit conversion
-
-    cout << destination << endl; // Output: 123
-    return 0;
-}
-```
-
-message.txt
-5 KB
+---
