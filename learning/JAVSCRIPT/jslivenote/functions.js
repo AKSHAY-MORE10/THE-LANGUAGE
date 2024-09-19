@@ -29,11 +29,10 @@
 // }
 
 // let arr2  ={...arr}
-// //arr2.name = "hitesh kumar"
-// //arr2.push(1)
+//arr2.name = "hitesh kumar"
+//arr2.push(1)
 // console.log(arr2)
 // console.log(arr)
-
 
 
 
@@ -69,7 +68,7 @@
 // //! demo  for understanding how tha parameter and  argument is
 // function add(a ,b, ...c ){
 // console.log(a + b )
-// // console.log(c);
+// console.log(c);
 // }
 //     add(2 ,3 , 2,34,5,5)
 
@@ -81,7 +80,6 @@
 //     console.log(elem + 1)
     
 // });
-
 
 
 // let obj ={
@@ -112,6 +110,7 @@
     
 //     console.log("name")
 // }
+// name()
 
 // //* 2. function expression  / anonymous function
 
@@ -127,7 +126,6 @@
 // ! differnt types of functions
 
 // first class function
-
 
 
 // function inner(a){
@@ -150,18 +148,18 @@
 
 
 // //!  setInterval , setTimeout
-let inter = setInterval(function () {
-    console.log(i++)
-    if (i == 5) {
-        clearInterval(inter)
-    }
-} ,2000)
+// let inter = setInterval(function () {
+//     console.log(i++)
+//     if (i == 5) {
+//         clearInterval(inter)
+//     }
+// } ,2000)
 
- let timer = setTimeout(function() {
-    console.log("hello")
-}, 400);
+//  let timer = setTimeout(function() {
+//     console.log("hello")
+// }, 400);
 
-clearTimeout(timer)
+// clearTimeout(timer)
 
     
 
@@ -184,15 +182,15 @@ clearTimeout(timer)
 //     console.log(key)
 // }
 
-//  //  !for each
+ //  !for each
 
-// // fruits.forEach(function (fruit ,idx  ,arrayfruit) {
-// //      console.log(fruit)
-// //      console.log(idx)
-// //      console.log(arrayfruit)
+// fruits.forEach(function (fruit ,idx  ,arrayfruit) {
+//      console.log(fruit)
+//      console.log(idx)
+//      console.log(arrayfruit)
 
 
-// //  })
+//  })
 
 
 // object banane ke tarike
@@ -248,7 +246,7 @@ clearTimeout(timer)
 
 
 
-//! Return keyqord 
+//! Return keyword 
 
 function us() {
     
@@ -293,12 +291,12 @@ function us() {
 // console.log(res)
 // console.log(res2)
 
-// // ! arrow function  , all 3 type
+// ! arrow function  , all 3 type
 // let a = c => c + 2;
 
-// // !1 . {} ==> return likha padega agar kuch retrun karna hai (explictly )to
-// // ! 2. () ==> no need to return , it will return implictly .
-// // console.log(a(2,3))
+// !1 . {} ==> return likha padega agar kuch retrun karna hai (explictly )to
+// ! 2. () ==> no need to return , it will return implictly .
+// console.log(a(2,3))
 
 // let result = a(2, 3);
 // console.log((result))
@@ -319,12 +317,8 @@ function us() {
 
 
 
-
-
 //  map . filter , reduce 
 // null vs undefined
-
-
 
 
 // promises , async await 
