@@ -1,17 +1,18 @@
-import java.util.Scanner;
+import java.util.*;
 
-public class java2 {
+public class basciOperat {
+
+
     public static void main(String[] args) {
 
-        // Reverse a string (1,2,3,4,5)
-        Scanner scnr = new Scanner(System.in);
-        String str = scnr.nextLine();
+        // transpose of array 
+    int[][] arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 
-        
-        String reversed = "";
-        for (int i = str.length() - 1; i >= 0; i--) {
-            reversed += str.charAt(i);
+    for (int i = 0; i < arr.length; i++) {
+        for (int j = 0; j < arr[i].length; j++) {
+            System.out.print(arr[j][i] + " ");
         }
-        System.out.println(reversed);
+        System.out.println();
+    }
     }
 }
