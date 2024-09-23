@@ -291,6 +291,59 @@ function us() {
 // console.log(res)
 // console.log(res2)
 
+
+class BankAccount {
+    constructor(accountHolderName) {
+      this.accountHolderName = accountHolderName;
+      this.accountBalance = 0;
+    }
+  
+    deposit(amount) {
+      if (amount > 0) {
+        this.accountBalance += amount;
+        console.log(`Deposited ${amount}. New balance: ${this.accountBalance}`);
+      } else {
+        console.log("Invalid deposit amount. Please enter a positive value.");
+      }
+    }
+  
+    withdraw(amount) {
+      if (amount > 0 && amount <= this.accountBalance) {
+        this.accountBalance -= amount;
+        console.log(`Withdrew ${amount}. New balance: ${this.accountBalance}`);
+      } else if (amount > this.accountBalance) {
+        console.log("Insufficient funds.");
+      } else {
+        console.log("Invalid withdrawal amount. Please enter a positive value.");
+      }
+    }
+  
+
+    getBalance() {
+      console.log(`Current balance: ${this.accountBalance}`);
+    }
+  }
+  
+  // Create an instance of the BankAccount class
+  const myAccount = new BankAccount("John Doe");
+  
+  // Perform some deposits and withdrawals
+  myAccount.deposit(1000);
+  myAccount.withdraw(500);
+  myAccount.deposit(200);
+  myAccount.withdraw(100);
+  
+  // Log the final balance
+  myAccount.getBalance();
+
+
+
+
+
+
+
+
+
 // ! arrow function  , all 3 type
 // let a = c => c + 2;
 
