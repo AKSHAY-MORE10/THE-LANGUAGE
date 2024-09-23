@@ -153,7 +153,7 @@
 // if you want to convert js object data to json so we use JSON.stringify
 let jsObj = {
     NAME: "akshay",
-    age: 91,
+    age: 11,
 }
 
 let jsToJson = JSON.stringify(jsObj);
