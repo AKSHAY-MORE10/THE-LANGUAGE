@@ -283,13 +283,13 @@ function us() {
 
 // }
 
-// let res = new createUser("nitesh", "emailmai@gmail.com", "psso")
+let res = new createUser("nitesh", "emailmai@gmail.com", "psso")
  
-// let res2 =  new  createUser("rakesh" , "emailmai" , "psso")
+let res2 =  new  createUser("rakesh" , "emailmai" , "psso")
 
 
-// console.log(res)
-// console.log(res2)
+console.log(res)
+console.log(res2)
 
 
 class BankAccount {
