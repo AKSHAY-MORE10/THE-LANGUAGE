@@ -6,14 +6,13 @@
 // }
 
 for (let i = 1; i <= 5; i++) {
-    console.log("Number: " + i);
+    // console.log("Number: " + i);
 }
 
 
 for (let a = 1; a <= 5; a++) {
-    console.log("Number: " + a);
+    // console.log("Number: " + a);
 }
-
 
 
 // ! do while loop

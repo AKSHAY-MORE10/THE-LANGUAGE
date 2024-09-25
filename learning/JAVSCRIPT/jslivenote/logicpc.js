@@ -23,7 +23,5 @@
 function sum(a,b){
    console.log(this)
    console.log(a + b);
-   
 }
-
 sum(1,3);

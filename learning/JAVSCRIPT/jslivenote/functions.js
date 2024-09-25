@@ -328,13 +328,13 @@ class BankAccount {
   const myAccount = new BankAccount("John Doe");
   
   // Perform some deposits and withdrawals
-  myAccount.deposit(1000);
-  myAccount.withdraw(500);
-  myAccount.deposit(200);
-  myAccount.withdraw(100);
+  // myAccount.deposit(1000);
+  // myAccount.withdraw(500);
+  // myAccount.deposit(200);
+  // myAccount.withdraw(100);
   
-  // Log the final balance
-  myAccount.getBalance();
+  // // Log the final balance
+  // myAccount.getBalance();
 
 
 
@@ -378,6 +378,7 @@ class BankAccount {
 
 //  stack memory is used in primitives types .
 // real copy of  data // deep copies of data
+
 
 
 //  heap memory is used in reference types .
