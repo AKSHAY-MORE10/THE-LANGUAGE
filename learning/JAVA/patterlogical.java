@@ -263,16 +263,16 @@ public class java1 {
 
 
 
-// for (int i = 0; i < 8; i++) {
-//     for (int j = 0; j < 8; j++) {
-//         if (i == 0 || i == 7 || j == 0 || j == 7) {
-//             System.out.print("*");
-//         } else {
-//             System.out.print(" ");
-//         }
-//     }
-//     System.out.println();
-// }
+for (int i = 0; i < 8; i++) {
+    for (int j = 0; j < 8; j++) {
+        if (i == 0 || i == 7 || j == 0 || j == 7) {
+            System.out.print("*");
+        } else {
+            System.out.print(" ");
+        }
+    }
+    System.out.println();
+}
 
 
 
@@ -282,18 +282,18 @@ public class java1 {
 //   12321
 //  1234321
 // 123454321
-//         for (int i = 0; i <= num; i++) {
-//             for (int j = i; j < num; j++) {
-//                 System.out.print(" ");
-//             }
-//             for (int j = 1; j <= i; j++) {
-//                 System.out.print(j);
-//             }
-//             for (int j = i - 1; j >= 1; j--) {
-//                 System.out.print(j);
-//             }
+        for (int i = 0; i <= num; i++) {
+            for (int j = i; j < num; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j);
+            }
+            for (int j = i - 1; j >= 1; j--) {
+                System.out.print(j);
+            }
 
-//             System.out.println();
+            System.out.println();
 //         }
     }
 }
