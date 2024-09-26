@@ -6,7 +6,7 @@ public class basciOperat {
     public static void main(String[] args) {
 
         // transpose of array 
-    // int[][] arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    int[][] arr = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
 
 
     //! transpose of arrays
@@ -32,11 +32,11 @@ public class basciOperat {
 // print sum of 2D array first index of each array
 
         // Initialize the 2D array
-        int[][] arr = {
-            {10, 20, 30},
-            {40, 50, 60},
-            {70, 80, 90}
-        };
+        // int[][] arr = {
+        //     {10, 20, 30},
+        //     {40, 50, 60},
+        //     {70, 80, 90}
+        // };
 
         // Array to hold column-wise sum
         int[] arrCol = new int[arr[0].length];
