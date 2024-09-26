@@ -1,5 +1,5 @@
-// let start = document.getElementsByClassName('btn')[0];
-// let stop = document.getElementsByClassName('btn1')[0];
+let start = document.getElementsByClassName('btn')[0];
+let stop = document.getElementsByClassName('btn1')[0];
 
 
 
@@ -48,9 +48,6 @@
 
 
 
-
-
-
 //? setTimeout, clearTimeout
 
 // setTimeout schedules a function to run after a delay.
@@ -80,8 +77,6 @@
 // }, 1000);
 
 // clearTimeout(timeoutID); // Cancels the timeout
-
-
 
 
 // let intervalID = setInterval(function() {
@@ -134,14 +129,6 @@
 // console.log(`The GCD of ${num1} and ${num2} is ${gcd}`);
 
  
-
-
-
-
-
-
-
-
 
 // //?  JSON.parse() and JSON.stringify()
 
