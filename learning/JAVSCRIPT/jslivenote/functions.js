@@ -292,40 +292,119 @@ console.log(res)
 console.log(res2)
 
 
-class BankAccount {
-    constructor(accountHolderName) {
-      this.accountHolderName = accountHolderName;
-      this.accountBalance = 0;
-    }
+//!This is Generated one
+// class BankAccount {
+//     constructor(accountHolderName) {
+//       this.accountHolderName = accountHolderName;
+//       this.accountBalance = 0;
+//     }
   
-    deposit(amount) {
-      if (amount > 0) {
-        this.accountBalance += amount;
-        console.log(`Deposited ${amount}. New balance: ${this.accountBalance}`);
-      } else {
-        console.log("Invalid deposit amount. Please enter a positive value.");
-      }
-    }
+//     deposit(amount) {
+//       if (amount > 0) {
+//         this.accountBalance += amount;
+//         console.log(`Deposited ${amount}. New balance: ${this.accountBalance}`);
+//       } else {
+//         console.log("Invalid deposit amount. Please enter a positive value.");
+//       }
+//     }
   
-    withdraw(amount) {
-      if (amount > 0 && amount <= this.accountBalance) {
-        this.accountBalance -= amount;
-        console.log(`Withdrew ${amount}. New balance: ${this.accountBalance}`);
-      } else if (amount > this.accountBalance) {
-        console.log("Insufficient funds.");
-      } else {
-        console.log("Invalid withdrawal amount. Please enter a positive value.");
-      }
-    }
+//     withdraw(amount) {
+//       if (amount > 0 && amount <= this.accountBalance) {
+//         this.accountBalance -= amount;
+//         console.log(`Withdrew ${amount}. New balance: ${this.accountBalance}`);
+//       } else if (amount > this.accountBalance) {
+//         console.log("Insufficient funds.");
+//       } else {
+//         console.log("Invalid withdrawal amount. Please enter a positive value.");
+//       }
+//     }
   
 
-    getBalance() {
-      console.log(`Current balance: ${this.accountBalance}`);
-    }
-  }
+//     getBalance() {
+//       console.log(`Current balance: ${this.accountBalance}`);
+//     }
+//   }
   
   // Create an instance of the BankAccount class
-  const myAccount = new BankAccount("John Doe");
+  // const myAccount = new BankAccount("John Doe");
+
+
+//! This is practiced one
+  class BankAccount {
+
+    static totalUser  =0;
+    
+   #accountBalance;
+
+ #incrementByone  = ()=>{
+   this.#accountBalance += 1;
+   console.log("you can increase by one ")
+ };
+
+ 
+   constructor(accountHolderName) {
+     this.accountHolderName = accountHolderName;
+     this.#accountBalance = 0;
+BankAccount.totalUser++ ;
+   }
+   
+ 
+   deposit(amount) {
+     if (amount > 0) {
+       this.#accountBalance += amount;
+       console.log(`Deposited $${amount}. New balance: $${this.#accountBalance}`);
+     } else {
+       console.log("Invalid deposit amount.");
+     }
+   }
+ 
+   withdraw(amount) {
+     if (amount > 0 && amount <= this.#accountBalance) {
+       this.#accountBalance -= amount;
+       console.log(`Withdrew $${amount}. New balance: $${this.#accountBalance}`);
+     } else if (amount > this.#accountBalance) {
+       console.log("Insufficient funds.");
+     } else {
+       console.log("Invalid withdrawal amount.");
+       this.#incrementByone();
+     }
+   }
+ 
+   getBalance() {
+     return this.#accountBalance;
+   }
+ }
+
+ const user1 = new BankAccount("Akshay");
+ const user2 = new BankAccount("Akshay");
+ const user3 = new BankAccount("Akshay");
+
+//   console.log(BankAccount.totalUser);
+
+
+//   console.log()
+// user1.deposit(100)
+// console.log(user1.getBalance());
+// user1.withdraw(-100)
+
+console.log(user1.getBalance());
+//   user1.deposit(100)
+//   user1.withdraw(200)
+
+//   console.log(user1.getBalance());
+
+//   BankAccount.prototype.incrementByOne = function(){   
+// //   this.#accountBalance += 1;
+// console.log("you can increase by one ")
+
+//   } 
+
+
+// static variable and method
+
+// private variable and method
+
+
   
   // Perform some deposits and withdrawals
   // myAccount.deposit(1000);
