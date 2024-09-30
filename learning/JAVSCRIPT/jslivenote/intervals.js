@@ -179,14 +179,14 @@
 
 //! method 2
 
-// let info = Object.create(null);
-// info.name = "akshay"
-// info.age = 21
-// info.course = "MCA"
-// info.getInfo = function() {
-//     console.log("Hello, " + this.name + ", " + this.age + " years old, " + this.course + " course");
-// }
-// info.getInfo()
+let info = Object.create(null);
+info.name = "akshay"
+info.age = 21
+info.course = "MCA"
+info.getInfo = function() {
+    console.log("Hello, " + this.name + ", " + this.age + " years old, " + this.course + " course");
+}
+info.getInfo()
 
 // ! method 3 by using new keyword
 // let info = new Object();
@@ -197,9 +197,6 @@
 //     console.log("Hello, " + this.name + ", " + this.age + " years old, " + this.course + " course");
 // }
 // info.getInfo()
-
-
-
 
 
 
