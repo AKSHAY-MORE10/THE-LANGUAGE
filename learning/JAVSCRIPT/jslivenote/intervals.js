@@ -1,5 +1,5 @@
-let start = document.getElementsByClassName('btn')[0];
-let stop = document.getElementsByClassName('btn1')[0];
+// let start = document.getElementsByClassName('btn')[0];
+// let stop = document.getElementsByClassName('btn1')[0];
 
 
 
@@ -138,16 +138,16 @@ let stop = document.getElementsByClassName('btn1')[0];
 //     "course": "BCA"
 // };
 // if you want to convert js object data to json so we use JSON.stringify
-let jsObj = {
-    NAME: "akshay",
-    age: 11,
-}
+// let jsObj = {
+//     NAME: "akshay",
+//     age: 11,
+// }
 
-let jsToJson = JSON.stringify(jsObj);
-console.log(jsToJson);
+// let jsToJson = JSON.stringify(jsObj);
+// console.log(jsToJson);
 
-let jsonToJs = JSON.parse(jsToJson);
-console.log(jsonToJs);
+// let jsonToJs = JSON.parse(jsToJson);
+// console.log(jsonToJs);
 
 
 
@@ -158,6 +158,45 @@ console.log(jsonToJs);
 // Parse the JSON string back into a JavaScript object
 // let jsonObject = JSON.parse(jsonString);
 // console.log(jsonObject);
+
+
+
+// Object in different ways
+
+//! method 1
+// const stud = {
+//     name:"akshay",
+//     age:19,
+//     course:"BCA",
+
+//     getInfo:function() {
+//         console.log("Hello, " + this.name + ", " + this.age + " years old, " + this.course + " course");
+//     }
+
+// }
+// stud.getInfo()
+
+
+//! method 2
+
+// let info = Object.create(null);
+// info.name = "akshay"
+// info.age = 21
+// info.course = "MCA"
+// info.getInfo = function() {
+//     console.log("Hello, " + this.name + ", " + this.age + " years old, " + this.course + " course");
+// }
+// info.getInfo()
+
+// ! method 3 by using new keyword
+// let info = new Object();
+// info.name = "akshay"
+// info.age = 21
+// info.course = "MCA"
+// info.getInfo = function() {
+//     console.log("Hello, " + this.name + ", " + this.age + " years old, " + this.course + " course");
+// }
+// info.getInfo()
 
 
 
