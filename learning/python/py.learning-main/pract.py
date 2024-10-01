@@ -40,7 +40,7 @@ def info(name, age, *skills, **additional):
         print(f"{key}: {value}")
 
 
-info("akshay",19, "python", "java", "c++", interest="developnemnt", hobby="cricket", course="python")
+# info("akshay",19, "python", "java", "c++", interest="developnemnt", hobby="cricket", course="python")
 
 
 # ! this will not work because first we should write *skills and they **additional
