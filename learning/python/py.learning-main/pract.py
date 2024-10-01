@@ -12,6 +12,7 @@ def userInfo(name,age=18, country=None,*end,**additional):
 
 userInfo("akshay",19,"india", "hello",cource="BCA",hobby="cricket")
 
+
 # def greet_name(name , age = 18 ,  country = "india",**additional ): 
 #     print(f"hello kaise ho {name} {age} {country} {additional}")
 
