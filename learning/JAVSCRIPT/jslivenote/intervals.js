@@ -242,15 +242,19 @@
 // global scope ke pollution se problem hote hai is liya IIFE use karta hai and it is called as Immediately Invoked Function Expression 
 // wo direct call hota hai
 
-(function (){
-    console.log("hello world1")
-}());
+// (function (){
+//     console.log("hello world1")
+// }());
 
 
-// named IIFE
-(function(name){
-    console.log(`hello ${name}`);
-})("akshay");
+// // named IIFE
+// (function(name){
+//     console.log(`hello ${name}`);
+// })("akshay");
+
+(() => {
+    console.log("hello world2")
+})();
 
 
 
