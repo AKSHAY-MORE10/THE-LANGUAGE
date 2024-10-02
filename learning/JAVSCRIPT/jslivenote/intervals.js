@@ -200,8 +200,57 @@
 
 
 
-
 // !1. Function Declaration
+// ak()
+
+// function ak(){
+//     console.log("hello world")
+// }; 
+
+
+
+
+//? 2. Function Expression
+
+
+// let aks = function(){
+//     console.log("hello world1")
+// }
+// aks()
+
+
+//! 3. Anonymous Function
+// it does not has its own identity anonymous function is used where functions are used as values 
+
+// let nit = function(){
+//     console.log("hello world")
+// }
+// nit()
+
+
+
+
+
+
+//! 4. IIFE(Immediately Invoked Function Expression)  
+
+// global scope ke pollution se problem hote hai is liya IIFE use karta hai 
+// wo direct call hota hai
+// This is commonly used to create a private scope for variables to avoid polluting the global namespace.
+
+(function info(name){
+    console.log(`hello ${name}`)
+})('akshay');
+
+
+( () => {
+    console.log("hello world2")
+})()
+
+
+
+
+
  
 // info()
 // function info(){
@@ -239,27 +288,44 @@
 
 //! 4. IIFE(Immediately Invoked Function Expression)  
 
-// global scope ke pollution se problem hote hai is liya IIFE use karta hai and it is called as Immediately Invoked Function Expression 
+// global scope ke pollution se problem hote hai is liya IIFE use karta hai 
 // wo direct call hota hai
+// This is commonly used to create a private scope for variables to avoid polluting the global namespace.
 
 // (function (){
 //     console.log("hello world1")
 // }());
 
 
-// // named IIFE
+// named IIFE
 // (function(name){
 //     console.log(`hello ${name}`);
 // })("akshay");
 
-(() => {
-    console.log("hello world2")
-})();
+    // (() => {
+    //     console.log("hello world2")
+    // })();
 
 
 
+// let res = (function (){
+//     let privatevar  ;
+//     return {
 
+//         getter:function(){
+//             return privatevar
+//         } ,
+//         setter:function(val){
+//        privatevar = val ;
+//         }
+//     }
+// }
+// )();
 
+// console.log(res.getter())
+
+// res.setter(20)
+// console.log(res.getter())
 
 
 
