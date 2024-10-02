@@ -179,14 +179,14 @@
 
 //! method 2
 
-let info = Object.create(null);
-info.name = "akshay"
-info.age = 21
-info.course = "MCA"
-info.getInfo = function() {
-    console.log("Hello, " + this.name + ", " + this.age + " years old, " + this.course + " course");
-}
-info.getInfo()
+// let info = Object.create(null);
+// info.name = "akshay"
+// info.age = 21
+// info.course = "MCA"
+// info.getInfo = function() {
+//     console.log("Hello, " + this.name + ", " + this.age + " years old, " + this.course + " course");
+// }
+// info.getInfo()
 
 // ! method 3 by using new keyword
 // let info = new Object();
@@ -201,9 +201,56 @@ info.getInfo()
 
 
 
+// !1. Function Declaration
+ 
+// info()
+// function info(){
+//     console.log("hello world")
+// };
+// info()
 
 
+//! 2. Function Expression
 
+// info2() we cant call the function before declaring it in {function expression}
+// let info2 = function(){
+//     console.log("hello world")
+// }
+
+
+// setInterval(function(){
+//     console.log("hello world")
+// },3000)
+
+
+//! 3. Anonymous Function
+// it does not has its own identity anonymous function is used where functions are used as values 
+
+
+// function(){
+
+// };
+
+// let ak = function(){
+//     console.log("hello world")
+// };
+// ak()
+
+
+//! 4. IIFE(Immediately Invoked Function Expression)  
+
+// global scope ke pollution se problem hote hai is liya IIFE use karta hai and it is called as Immediately Invoked Function Expression 
+// wo direct call hota hai
+
+(function (){
+    console.log("hello world1")
+}());
+
+
+// named IIFE
+(function(name){
+    console.log(`hello ${name}`);
+})("akshay");
 
 
 
