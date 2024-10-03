@@ -308,24 +308,24 @@
 
 
 
-// let res = (function (){
-//     let privatevar  ;
-//     return {
+let res = (function (){
+    let privatevar  ;
+    return {
 
-//         getter:function(){
-//             return privatevar
-//         } ,
-//         setter:function(val){
-//        privatevar = val ;
-//         }
-//     }
-// }
-// )();
+        getter:function(){
+            return privatevar
+        } ,
+        setter:function(val){
+       privatevar = val ;
+        }
+    }
+}
+)();
 
-// console.log(res.getter())
+console.log(res.getter())
 
-// res.setter(20)
-// console.log(res.getter())
+res.setter(20)
+console.log(res.getter())
 
 
 
