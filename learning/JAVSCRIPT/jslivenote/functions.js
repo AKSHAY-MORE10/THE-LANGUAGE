@@ -270,11 +270,11 @@ const user1 = new BankAccount("Akshay");
 
 // ! arrow function , all 3 types
 let sum = (c) => c + 2;
-// console.log(sum(2));
+console.log(sum(2));
 
 // rest operator
 function add(a, b, ...c) {
-  // console.log(a + b);
-  // console.log(c);
+  console.log(a + b);
+  console.log(c);
 }
 add(2, 3, 4, 5, 6);
