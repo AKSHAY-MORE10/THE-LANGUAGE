@@ -4,16 +4,16 @@
 // var: Function-scoped. If declared inside a function, it's only accessible within that function.
 // let and const: Block-scoped. They are only accessible within the block {} they are declared in.
 
-function testVar() {
-    var x = 1;
-    if (true) {
-      var x = 2;  // same variable (function-scoped)
-    //   console.log(x);  // 2
-    }
-    console.log(x);  // 2 (because `var` is function-scoped)
-  }
-//   console.log(x);
-  testVar();
+// function testVar() {
+//     var x = 1;
+//     if (true) {
+//       var x = 2;  // same variable (function-scoped)
+//     //   console.log(x);  // 2
+//     }
+//     console.log(x);  // 2 (because `var` is function-scoped)
+//   }
+// //   console.log(x);
+//   testVar();
 
 // function testLet() {
 //     let y = 1;
@@ -92,3 +92,88 @@ function testVar() {
 
 
 
+
+// !What is an event listener, and what is the event loop? Are they the same or different?
+
+// ?Event Listener:
+// An event listener is a function or method in JavaScript that waits for a specific event to occur 
+// (like a click, hover, or keypress) and then executes a function when that event happens.
+
+// It’s essentially a way to handle events that happen on the DOM (Document Object Model) 
+// elements, like a button being clicked or a form being submitted.
+
+// // Add an event listener to a button:
+// let start = document.getElementById('myButton');
+// start.addEventListener("click", function() {
+//     console.log("Button was clicked!");
+// });
+
+
+//  ?2. Event Loop:
+// The event loop is part of JavaScript's concurrency model. It’s responsible for handling the execution
+//  of asynchronous tasks, such as callbacks from events, timers, or promises.
+
+// JavaScript is single-threaded, which means it can only do one thing at a time. The event loop helps
+//  manage asynchronous operations by allowing JavaScript to continue running while waiting for things like network requests or timers to complete.
+  
+
+// console.log("Start");
+// setTimeout(() => {
+//   console.log("This is an asynchronous task (setTimeout)");
+// }, 1000);
+
+// console.log("End");
+
+
+// Key Differences:
+// Event Listener: Listens for specific events like clicks or key presses on the DOM and responds by executing a function.
+// Event Loop: Handles the execution of asynchronous operations in JavaScript. It ensures that the tasks in the task 
+// queue are executed once the call stack is clear.
+
+// !Tell 7 ES6+ features in JavaScript. Explain 4 of them.
+
+// Arrow Functions
+// Template Literals
+// Destructuring Assignment
+// Template Literals
+// Destructuring Assignment
+
+let info = {
+    name : "akshay",
+    age : 19,
+    cource :{
+        stud1 : "BCA",
+        stud2 : "MCA"
+    }
+}
+let {stud1, stud2} = info.cource
+console.log(stud1, stud2)
+console.log(!!false)
+console.log(!!true);
+
+
+
+// Default Parameters
+// Spread and Rest Operators
+// Promises
+// Classes
+// Generators
+//nulish operaters
+
+
+
+
+
+
+//! What is closure in javascript? closures
+// closures function along with lexical scope and scope chain bundled together in known as closure
+
+
+// function outerFunction(outerVariable) {
+//     return function innerFunction(innerVariable) {
+//       return outerVariable + innerVariable;
+//     };
+//   }
+  
+//   const innerFunction = outerFunction(5);
+//   console.log(innerFunction(10));  // 15
