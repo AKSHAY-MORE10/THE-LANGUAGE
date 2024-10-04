@@ -148,8 +148,8 @@ let info = {
 }
 let {stud1, stud2} = info.cource
 console.log(stud1, stud2)
-console.log(!!false)
-console.log(!!true);
+// console.log(!!false)
+// console.log(!!true);
 
 
 
