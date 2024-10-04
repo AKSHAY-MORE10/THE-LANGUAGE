@@ -130,7 +130,35 @@
 // Event Loop: Handles the execution of asynchronous operations in JavaScript. It ensures that the tasks in the task 
 // queue are executed once the call stack is clear.
 
+// !Tell 7 ES6+ features in JavaScript. Explain 4 of them.
 
+// Arrow Functions
+// Template Literals
+// Destructuring Assignment
+// Template Literals
+// Destructuring Assignment
+
+let info = {
+    name : "akshay",
+    age : 19,
+    cource :{
+        stud1 : "BCA",
+        stud2 : "MCA"
+    }
+}
+let {stud1, stud2} = info.cource
+console.log(stud1, stud2)
+console.log(!!false)
+console.log(!!true);
+
+
+
+// Default Parameters
+// Spread and Rest Operators
+// Promises
+// Classes
+// Generators
+//nulish operaters
 
 
 
